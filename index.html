@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+ 	</head>
+  	<body>
+  	<h1 class ="title">Bill Gates </h1>
+
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Bio</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Mas+
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Wiki</a></li>
+                  <li><a class="dropdown-item" href="#">Premios</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Sobre nosotros</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <br> </br>
+      <div class="dropdown">
+        <button class="drop" type="button" data-bs-toggle="dropdown" aria-expanded="false" style = "float: right;">
+      Menu
+        </button>
+        <ul class="dropdown-menu">
+          <li><a class="item 1" href="#">Opcion 1</a></li>
+          <li><a class="item 2" href="#">Opcion 2</a></li>
+          <li><a class="item 3" href="#">Opcion 3</a></li>
+        </ul>
+      </div>
+  	<div class="card" style="width: 18rem;">
+      <img src = "image.jpg">
+  		<div class="card-body">
+	    	<h5 class="card-title">Bill Gates</h5>
+	    	<h6 class="card-subtitle mb-2 text-muted">Fundador de Microsoft</h6>
+	    	<p class="card-text">Creador y fundador de Microsoft empresa de software</p>
+	    	<a href="https://getbootstrap.com/docs/5.2/components/card/" class="card-link">Wiki</a>
+	    	<a href="https://getbootstrap.com/" class="card-link">Microsoft</a>
+  		</div>
+	</div>
+
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="Conf.jpeg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Bill</h5>
+          <p>Giving a conference.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Mad.jpeg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Bill</h5>
+          <p>Angry bill.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="Happy.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Bill</h5>
+          <p>Happy bill.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  
+<br> </br>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Microsoft
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Historia de Microsoft</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            Microsoft Corporation is an American multinational technology corporation which produces computer software, consumer electronics, personal computers, and related services 
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close too</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+	<br> 
+	</br>
+	<h4 class ="title">Logros </h4>
+	<div class="card" style="width: 18rem;">
+  	<ul class="list-group list-group-flush">
+    	<li class="list-group-item">Medalla nacional de tecnologia</li>
+    	<li class="list-group-item">Medalla presidencial de libertad</li>
+    	<li class="list-group-item">Padma Bhushan</li>
+  	</ul>
+	</div>
+
+  <br> </br>
+  <p>
+    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+      Dinero
+    </button>
+    
+  </p>
+  <div class="collapse" id="collapseExample">
+    <div class="card card-body">
+      Bill Gates tiene 111 millones de dolares en networth
+    </div>
+  </div>
+  <br> </br>
+  <div class="accordion accordion-flush" id="accordionFlushExample">
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingOne">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+          Vida Temprana
+        </button>
+      </h2>
+      <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Bill Gates nació el 28 de octubre de 1955. Es hijo de William H. Gates Sr., un destacado abogado, y de Mary Gates, profesora de la Universidad de Washington y directora del First Interstate Bank. Con ellos y su hermana, dos años mayor, vivió en la ciudad de Seattle, en el estado de Washington</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+          Vida Media
+        </button>
+      </h2>
+      <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">En 1980, se reunió con representantes de IBM en Seattle. Ellos querían contar con el sistema operativo CP/M. Él les comento de la existencia de una versión adaptada llamada QDOS u 86DOS, comprometiéndose a conseguir una licencia no exclusiva a fin de adaptarla.</div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="flush-headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+          Vida Actual
+        </button>
+      </h2>
+      <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+        <div class="accordion-body">Desde 2007 Bill Gates ocupaba el segundo lugar en la lista anual de las mayores fortunas personales realizada por la revista Forbes, detrás del empresario mexicano Carlos Slim, pero debido a fluctuaciones en el patrimonio de estos dos magnates, sus fortunas quedaron en 72 700 y 72 100 millones de dólares respectivamente</div>
+      </div>
+    </div>
+  </div>
+
+    <br> </br>
+    <h4>Contactamos</h4>
+    <form>
+        <div class="row mb-3">
+          <label for="inputEmail3" class="col-sm-2 col-form-label">Email</label>
+          <div class="col-sm-10">
+            <input type="email" class="form-control" id="inputEmail3">
+          </div>
+        </div>
+        <div class="row mb-3">
+          <label for="inputPassword3" class="col-sm-2 col-form-label">Mensaje</label>
+          <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword3">
+          </div>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+      <br> </br>
+      <div class="spinner-border text-primary" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+  </body>
+
+  <style>
+    body{
+    background-color: lightblue;
+    }
+
+    h1{
+    color: white;
+    text-align: center;
+    }
+
+    h4{
+    margin-left: 10px;
+    }
+
+    button{
+    margin-left: 10px;
+    }
+
+    .drop{
+    font-size: 30px;
+    margin-right: 10px;
+    }
+    
+    div{
+    margin-left: 10px;
+    }
+
+    nav{
+    margin-left: 10px;
+    }
+
+    .modal{
+    margin: 50px;
+    }
+
+   </style>
+</html>
+
